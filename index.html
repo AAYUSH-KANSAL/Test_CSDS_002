@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="loginPanel" class="login-container">
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="button">Login</button>
+        </form>
+    </div>
+
+     
+    <div id="dashboard" class="dashboard-container" style="display: none;">
+        <h1>Welcome Ayush</h1>
+        <button id="logoutBtn" class="button logout-button">Logout</button>
+        
+        <div class="user-details">
+            <h2>User Details</h2>
+            <div class="user-panel">
+                <label for="sortDropdown">Sort users by:</label>
+                <select id="sortDropdown">
+                     
+                </select>
+            </div>
+            <ul id="userList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
